@@ -85,6 +85,14 @@ section > p {
   border-radius: 0.5rem;
 }
 
+.announcements > div > h2{
+    font-size: medium;
+}
+
+.announcements > div > p{
+    font-size: small;
+}
+
 .top {
   grid-row: 1;
 }
@@ -100,7 +108,24 @@ section > p {
 .trending {
   grid-column: 2;
   grid-row: 2 / 3;
-  background-color: var(--yellow-detail);
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.trending > div{
+    padding: 1rem;
+}
+
+.trending > div > h2{
+    font-size: medium;
+}
+
+.trending > div > p{
+    font-size: small;
 }
 
 article {
