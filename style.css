@@ -66,10 +66,43 @@
 #top p{
     grid-column: 7;
 }
-.header#bottom{
-    grid-row: 2;
-    grid-template-columns: 2fr 4fr 3fr 2fr 2fr 2fr;
-    grid-template-rows: 100%;
+
+.header #bottom{
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 8fr 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#bottom #image{
+    grid-column: 1 / 2;
+    height: 40px;
+    width: 40px;
+}
+
+.header #bottom > button{
+    padding: 1rem;
+    background-color: var(--admin-blue);
+    border-radius: 1rem;
+    width: fit-content;
+    border: none;
+    color: white;
+}
+
+#bottom #hi{
+    grid-column: 2 / 3;
+}
+
+#bottom #new{
+    grid-column: 4 / 5;
+}
+
+#bottom #upload{
+    grid-column: 5 / 6;
+}
+
+#bottom #share{
+    grid-column: 6 / 7;
 }
 
 .sidebar {
